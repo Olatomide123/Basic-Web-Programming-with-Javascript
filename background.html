@@ -1,0 +1,89 @@
+<!--
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello!</title>
+	<script type="text/javascript">
+		function backgroundchg(x) {
+			document.body.style.backgroundColor=x;
+		}
+	</script>
+</head>
+<body>
+	<button onclick="backgroundchg('red');" id="red">R</button>
+	<button onclick="backgroundchg('green');" id="green">G</button>
+	<button onclick="backgroundchg('blue');" id="blue">B</button>	
+</body>
+</html>
+
+-->
+ 
+						<!-- OR -->
+
+<!--
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello!</title>
+</head>
+<body>
+	<button id="red">R</button>
+	<button id="green">G</button>
+	<button id="blue">B</button>
+
+	<script type="text/javascript">
+
+			document.querySelector("#red").onclick = function()
+			{
+				document.querySelector('body').style.backgroundColor='red';
+			}
+			document.querySelector("#green").onclick = function()
+			{
+				document.querySelector('body').style.backgroundColor='green';
+			}
+			document.querySelector("#blue").onclick = function()
+			{
+				document.querySelector('body').style.backgroundColor='blue';
+			}		
+	</script>	
+</body>
+</html>
+-->
+
+							<!-- OR -->
+<!-- To clean up the above code! -->
+
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello!</title>
+</head>
+<body>
+	<button id="red">R</button>
+	<button id="green">G</button>
+	<button id="blue">B</button>
+
+	<script type="text/javascript">
+
+		let body = document.querySelector('body');
+
+			document.querySelector("#red").onclick = function () 
+			{
+				body.style.backgroundColor='red';
+			} 
+			
+			document.querySelector("#green").onclick = function()
+			{
+				body.style.backgroundColor='green';
+			}
+			document.querySelector("#blue").onclick = function()
+			{
+				body.style.backgroundColor='blue';
+			}	
+			
+	</script>	
+
+	
+</body>
+</html>

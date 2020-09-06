@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Hello!</title>
+	<script type="text/javascript">
+		function greet()
+		{
+			let x = document.querySelector("#name").value;
+			if (x ===  "")
+			{
+				x = "world";
+			}
+			// to display an alert on the screen:
+			// alert("Hello " + x + "!");
+			
+			// to change the html content of <div> :
+			document.querySelector("#result").innerHTML = "Hello, " + x + "!";
+		}
+	</script>
+</head>
+<body>
+	<form onsubmit="greet(); return false;">
+		<input type="text" id="name">
+		<input type="submit">
+	</form>
+	<div id="result">
+		Hello!
+	</div>
+</body>
+</html>
